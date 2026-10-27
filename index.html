@@ -60,33 +60,33 @@ button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
   <section class="hero">
     <h1><span class="w">Happy Birthday</span><span class="w n">Priti</span></h1>
     <p class="cd" id="cd">17 November</p>
-    <button class="stage" id="stage" aria-label="Phool phutiye dao">
+    <button class="stage" id="stage" aria-label="Phool phutiye de">
       <div class="halo"></div>
       <div class="flower" id="flower"><b class="core"></b></div>
     </button>
-    <p class="hint" id="hint">Kuri-te tap koro, dekho ki hoy</p>
+    <p class="hint" id="hint">Kuri-te tap kor, dekh ki hoy</p>
   </section>
 
   <section class="after" id="after">
     <h2>Phool phute gelo!</h2>
-    <p class="lead">Ei tin-te card-e tomar jonno ekta kore wish lukano ache. Tap kore ulte dekho.</p>
+    <p class="lead">Ei tin-te card-e tor jonno ekta kore wish lukano ache. Tap kore ulte dekh.</p>
     <div class="cards">
-      <button class="fc"><span class="f">Prothom wish</span><span class="b">Priti, tomar hashi jeno ei bochor-o age-r moto-i sundor thakey.</span></button>
-      <button class="fc"><span class="f">Dwitiyo wish</span><span class="b">Je swapno dekho, tar kache jeno ek step kore pouchao.</span></button>
-      <button class="fc"><span class="f">Tritiyo wish</span><span class="b">Tumi je amar friend, eta amar khub bhalo lage. Thank you, pashe thakar jonno.</span></button>
+      <button class="fc"><span class="f">Prothom wish</span><span class="b">Priti, tor hashi jeno ei bochor-o age-r moto-i sundor thake.</span></button>
+      <button class="fc"><span class="f">Dwitiyo wish</span><span class="b">Je swapno dekhis, tar kache jeno ek step kore pouchas.</span></button>
+      <button class="fc"><span class="f">Tritiyo wish</span><span class="b">Tui je amar friend, eta amar khub bhalo lage. Thank you, pashe thakar jonno.</span></button>
     </div>
 
-    <h2>Tomar nijer bagan</h2>
-    <p class="lead">Jekhane iccha tap koro, ekta kore phool phutbe.</p>
-    <div class="garden" id="garden"><p id="gp">Ekta tap diye shuru koro</p></div>
+    <h2>Tor nijer bagan</h2>
+    <p class="lead">Jekhane iccha tap kor, ekta kore phool phutbe.</p>
+    <div class="garden" id="garden"><p id="gp">Ekta tap diye shuru kor</p></div>
     <p class="cnt">Phool: <span id="cnt">0</span></p>
 
     <h2>Ekta chhoto message</h2>
     <div class="msg">
-      <p>Priti, ajker din-ta tomar. Hashi, golpo, ar bhalo khabar diye bhore uthuk.</p>
-      <p>Ei bagan-ta ami tomar jonno sajiyechi. Birthday-r shubhechha roilo!</p>
+      <p>Priti, ajker din-ta tor. Hashi, golpo, ar bhalo khabar diye bhore uthuk.</p>
+      <p>Ei bagan-ta ami tor jonno sajiyechi. Birthday-r shubhechha roilo!</p>
     </div>
-    <button class="wish" id="wish">Ekta wish koro</button>
+    <button class="wish" id="wish">Ekta wish kor</button>
     <p class="done" id="done"></p>
   </section>
 </main>
@@ -120,7 +120,7 @@ button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
   var st=$('stage'),af=$('after'),opened=false;
   st.addEventListener('click',function(){
     if(opened)return;opened=true;st.classList.add('open');
-    $('hint').textContent='Priti, tomar jonno phool phute gelo';
+    $('hint').textContent='Priti, tor jonno phool phute gelo';
     af.classList.add('show');
     var r=st.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,reduce?30:140);
     setTimeout(function(){af.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'})},1500);
@@ -142,7 +142,7 @@ button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
   // wish
   $('wish').addEventListener('click',function(e){
     var r=e.currentTarget.getBoundingClientRect();burst(r.left+r.width/2,r.top,reduce?30:160);
-    $('done').textContent='Tomar wish pouchhe geche. Happy Birthday, Priti!';
+    $('done').textContent='Tor wish pouchhe geche. Happy Birthday, Priti!';
   });
 })();
 </script>

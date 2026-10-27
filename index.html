@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Priti</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,600&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#fff0f6;--bg2:#ffd3e5;--ink:#4a1d3f;--muted:#8a5a7c;--rose:#ff6fa5;--deep:#d6336c;--gold:#ffd27a;--card:rgba(255,255,255,.6);--line:rgba(214,51,108,.2);--grass:#a8e0c3;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#2a1030;--bg2:#4a1a4a;--ink:#ffeaf3;--muted:#e2b5d0;--deep:#ff8fbb;--card:rgba(255,255,255,.08);--line:rgba(255,143,187,.25);--grass:#2f6b57;color-scheme:dark}}
+:root[data-theme="dark"]{--bg1:#2a1030;--bg2:#4a1a4a;--ink:#ffeaf3;--muted:#e2b5d0;--deep:#ff8fbb;--card:rgba(255,255,255,.08);--line:rgba(255,143,187,.25);--grass:#2f6b57;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;color:var(--ink);font:400 18px/1.6 "Hind Siliguri",system-ui,sans-serif;background:radial-gradient(60% 40% at 80% 5%,var(--bg2),transparent),radial-gradient(70% 50% at 10% 60%,var(--bg2),transparent),var(--bg1);background-attachment:fixed;overflow-x:hidden}
+#c{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:6}
+.wrap{max-width:640px;margin:0 auto;padding:0 22px}
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px 0}
+h1{margin:0;font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:600;line-height:.98;font-size:clamp(44px,13vw,92px);letter-spacing:-.01em}
+h1 .w{display:block;animation:rise 1.6s cubic-bezier(.2,.7,.2,1) both}
+h1 .n{color:var(--deep);text-shadow:0 0 36px color-mix(in srgb,var(--rose) 55%,transparent);animation-delay:.6s}
+@keyframes rise{from{opacity:0;filter:blur(14px);transform:translateY(22px) scale(.96)}to{opacity:1;filter:blur(0);transform:none}}
+.cd{margin:14px 0 0;color:var(--muted);animation:rise 1.4s 1.2s both}
+.stage{position:relative;width:300px;height:300px;margin:18px auto 6px;perspective:900px;background:none;border:0;padding:0;cursor:pointer;color:inherit;animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.halo{position:absolute;inset:-18%;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--rose) 45%,transparent),transparent 65%);opacity:.35;transition:opacity 2s}
+.open .halo{opacity:.95}
+.flower{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(calc(var(--rx,0deg) + 22deg)) rotateY(var(--ry,0deg));transition:transform .25s ease-out}
+.petal{position:absolute;left:50%;bottom:50%;transform-origin:50% 100%;border-radius:50% 50% 45% 45%/88% 88% 12% 12%;transform:rotateZ(var(--a)) rotateX(var(--t));transition:transform 2s cubic-bezier(.2,.8,.2,1) calc(var(--i)*70ms);box-shadow:inset 0 -18px 28px rgba(214,51,108,.28),0 2px 12px rgba(214,51,108,.2)}
+.o1{width:72px;height:134px;margin-left:-36px;--t:-72deg;background:linear-gradient(to top,#ff8ab8,#ffc6dc 70%,#fff0f6)}
+.o2{width:58px;height:102px;margin-left:-29px;--t:-80deg;background:linear-gradient(to top,#ff6fa5,#ffb0d0 75%,#ffe3ef)}
+.open .o1{--t:16deg}.open .o2{--t:-6deg}
+.core{position:absolute;left:50%;top:50%;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3c4,var(--gold) 55%,#e9a23b);transform:translateZ(18px);box-shadow:0 4px 16px rgba(233,162,59,.5)}
+.hint{margin:6px 0 0;color:var(--muted);font-size:16px}
+.after{display:none;padding:24px 0 8px}
+.after.show{display:block;animation:rise 1.2s both}
+h2{font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:600;font-size:clamp(28px,7vw,38px);margin:42px 0 8px;line-height:1.15}
+.lead{color:var(--muted);margin:0 0 18px}
+.cards{display:grid;gap:14px;perspective:1000px}
+.fc{position:relative;height:150px;border:0;padding:0;background:none;color:inherit;font:inherit;cursor:pointer;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.fc.flip{transform:rotateY(180deg)}
+.fc span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;border-radius:24px;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:1px solid var(--line)}
+.fc .f{background:linear-gradient(135deg,var(--rose),#ffa6c9);color:#4a1d3f;font-weight:600;font-size:20px;box-shadow:0 12px 30px rgba(214,51,108,.28)}
+.fc .b{transform:rotateY(180deg);background:var(--card);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.garden{position:relative;height:280px;border-radius:30px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(to bottom,transparent 55%,color-mix(in srgb,var(--grass) 80%,transparent));cursor:crosshair;touch-action:manipulation;-webkit-user-select:none;user-select:none}
+.garden>p{position:absolute;inset:0;margin:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:var(--muted);pointer-events:none}
+.bl{position:absolute;transform:translate(-50%,-50%);animation:grow .9s cubic-bezier(.2,1.7,.4,1) both;pointer-events:none}
+@keyframes grow{from{transform:translate(-50%,-50%) scale(0) rotate(-70deg)}to{transform:translate(-50%,-50%) scale(1) rotate(0)}}
+.cnt{margin:8px 0 0;text-align:right;color:var(--muted);font-size:15px}
+.msg{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:24px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.msg p{margin:0 0 10px}
+.wish{display:block;margin:26px auto 0;border:0;border-radius:999px;padding:15px 30px;background:var(--deep);color:#fff;font:600 18px "Hind Siliguri",sans-serif;cursor:pointer;box-shadow:0 12px 30px rgba(214,51,108,.35)}
+.done{text-align:center;color:var(--muted);min-height:30px;margin:14px 0 70px}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+@media (prefers-reduced-motion:reduce){h1 .w,.cd,.stage,.after.show{animation:none}.petal,.fc{transition:none}}
+</style>
+</head>
+<body>
+<canvas id="c" aria-hidden="true"></canvas>
+<main class="wrap">
+  <section class="hero">
+    <h1><span class="w">Happy Birthday</span><span class="w n">Priti</span></h1>
+    <p class="cd" id="cd">17 November</p>
+    <button class="stage" id="stage" aria-label="Phool phutiye dao">
+      <div class="halo"></div>
+      <div class="flower" id="flower"><b class="core"></b></div>
+    </button>
+    <p class="hint" id="hint">Kuri-te tap koro, dekho ki hoy</p>
+  </section>
+
+  <section class="after" id="after">
+    <h2>Phool phute gelo!</h2>
+    <p class="lead">Ei tin-te card-e tomar jonno ekta kore wish lukano ache. Tap kore ulte dekho.</p>
+    <div class="cards">
+      <button class="fc"><span class="f">Prothom wish</span><span class="b">Priti, tomar hashi jeno ei bochor-o age-r moto-i sundor thakey.</span></button>
+      <button class="fc"><span class="f">Dwitiyo wish</span><span class="b">Je swapno dekho, tar kache jeno ek step kore pouchao.</span></button>
+      <button class="fc"><span class="f">Tritiyo wish</span><span class="b">Tumi je amar friend, eta amar khub bhalo lage. Thank you, pashe thakar jonno.</span></button>
+    </div>
+
+    <h2>Tomar nijer bagan</h2>
+    <p class="lead">Jekhane iccha tap koro, ekta kore phool phutbe.</p>
+    <div class="garden" id="garden"><p id="gp">Ekta tap diye shuru koro</p></div>
+    <p class="cnt">Phool: <span id="cnt">0</span></p>
+
+    <h2>Ekta chhoto message</h2>
+    <div class="msg">
+      <p>Priti, ajker din-ta tomar. Hashi, golpo, ar bhalo khabar diye bhore uthuk.</p>
+      <p>Ei bagan-ta ami tomar jonno sajiyechi. Birthday-r shubhechha roilo!</p>
+    </div>
+    <button class="wish" id="wish">Ekta wish koro</button>
+    <p class="done" id="done"></p>
+  </section>
+</main>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var cv=$('c'),cx=cv.getContext('2d'),W,H,dpr=Math.min(devicePixelRatio||1,2);
+  function size(){W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0)}
+  size();addEventListener('resize',size);
+  var cols=['#ff9ec4','#ffc2da','#ff7fb0','#ffd9e8','#f7a8d0'],ps=[];
+  function mk(x,y,b){var a=Math.random()*6.283,s=b?3+Math.random()*9:0;
+    return{x:x,y:y,vx:b?Math.cos(a)*s:0,vy:b?Math.sin(a)*s-4:0,s:6+Math.random()*9,c:cols[(Math.random()*5)|0],r:Math.random()*6,vr:(Math.random()-.5)*.08,ph:Math.random()*6,b:b,l:200,f:.5+Math.random()*.9}}
+  if(!reduce)for(var i=0;i<26;i++)ps.push(mk(Math.random()*innerWidth,Math.random()*innerHeight,false));
+  function frame(){
+    cx.clearRect(0,0,W,H);
+    for(var i=ps.length-1;i>=0;i--){var p=ps[i];
+      if(p.b){p.x+=p.vx;p.y+=p.vy;p.vy+=.18;p.vx*=.985;p.l--;if(p.l<=0||p.y>H+30){ps.splice(i,1);continue}}
+      else{p.y+=p.f;p.ph+=.015;p.x+=Math.sin(p.ph)*.6;if(p.y>H+20){p.y=-20;p.x=Math.random()*W}}
+      p.r+=p.vr;cx.save();cx.translate(p.x,p.y);cx.rotate(p.r);
+      cx.globalAlpha=p.b?Math.min(1,p.l/60):.75;cx.fillStyle=p.c;cx.beginPath();cx.ellipse(0,0,p.s,p.s*.55,0,0,6.283);cx.fill();cx.restore()}
+    requestAnimationFrame(frame)}
+  frame();
+  function burst(x,y,n){for(var i=0;i<n;i++)ps.push(mk(x,y,true))}
+
+  // flower
+  var fl=$('flower'),core=fl.firstChild;
+  function ring(n,cls,off){for(var i=0;i<n;i++){var d=document.createElement('i');d.className='petal '+cls;d.style.setProperty('--a',(i*360/n+off)+'deg');d.style.setProperty('--i',i);fl.insertBefore(d,core)}}
+  ring(12,'o1',0);ring(8,'o2',22);
+  addEventListener('pointermove',function(e){fl.style.setProperty('--ry',((e.clientX/W-.5)*26)+'deg');fl.style.setProperty('--rx',(-(e.clientY/H-.5)*22)+'deg')});
+  var st=$('stage'),af=$('after'),opened=false;
+  st.addEventListener('click',function(){
+    if(opened)return;opened=true;st.classList.add('open');
+    $('hint').textContent='Priti, tomar jonno phool phute gelo';
+    af.classList.add('show');
+    var r=st.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,reduce?30:140);
+    setTimeout(function(){af.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'})},1500);
+  });
+
+  // flip cards
+  [].forEach.call(document.querySelectorAll('.fc'),function(b){b.addEventListener('click',function(){b.classList.toggle('flip')})});
+
+  // garden
+  var g=$('garden'),n=0,em=['🌸','🌷','🌺','🌼','🪻','🌹'];
+  g.addEventListener('pointerdown',function(e){
+    var r=g.getBoundingClientRect(),s=document.createElement('span');
+    s.className='bl';s.textContent=em[(Math.random()*em.length)|0];
+    s.style.left=(e.clientX-r.left)+'px';s.style.top=(e.clientY-r.top)+'px';s.style.fontSize=(28+Math.random()*28)+'px';
+    g.appendChild(s);n++;$('cnt').textContent=n;$('gp').style.display='none';
+    var all=g.querySelectorAll('.bl');if(all.length>70)all[0].remove();
+  });
+
+  // wish
+  $('wish').addEventListener('click',function(e){
+    var r=e.currentTarget.getBoundingClientRect();burst(r.left+r.width/2,r.top,reduce?30:160);
+    $('done').textContent='Tomar wish pouchhe geche. Happy Birthday, Priti!';
+  });
+})();
+</script>
+</body>
+</html>

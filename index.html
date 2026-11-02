@@ -114,7 +114,9 @@ h2{font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:600;font-siz
 .blow .cdl i:nth-child(1)::after{animation-delay:.5s}.blow .cdl i:nth-child(2)::after{animation-delay:.62s}.blow .cdl i:nth-child(3)::after{animation-delay:.74s}
 @keyframes smoke{0%{opacity:0;transform:translate(0,0) scale(.6)}20%{opacity:.8}100%{opacity:0;transform:translate(14px,-64px) scale(2.6)}}
 html{-webkit-tap-highlight-color:transparent}button{touch-action:manipulation;-webkit-user-select:none;user-select:none}
-html:not(.ready) h1 .w,html:not(.ready) .cd,html:not(.ready) .hint{animation-play-state:paused}
+html:not(.ready) h1 .w,html:not(.ready) .by,html:not(.ready) .cd,html:not(.ready) .hint{animation-play-state:paused}
+.by{margin:0 0 18px;display:flex;align-items:center;gap:14px;font-size:14px;letter-spacing:.28em;color:var(--muted);animation:rise 1.6s .5s both}
+.by::before,.by::after{content:"";width:28px;height:1px;background:currentColor;opacity:.5}
 button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.bar{display:none}}
 </style>
@@ -133,6 +135,7 @@ button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
 <button class="snd" id="snd" aria-pressed="false">♪ Sound off</button>
 <main class="wrap">
   <section class="hero">
+    <p class="by">impsys (IMPERIAL)</p>
     <h1><span class="w">Happy Birthday</span><span class="w n">Priti</span></h1>
     <p class="cd">17 November</p>
     <button class="stage" id="stage" aria-label="Phool phutiye de">
